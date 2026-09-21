@@ -1,0 +1,64 @@
+{
+  "scope": "Interactive verification through Codex in-app browser; synthetic local data only",
+  "base_url": "http://127.0.0.1:8080",
+  "checks": [
+    {
+      "name": "Authenticated administrator login and persisted case detail",
+      "passed": true
+    },
+    {
+      "name": "Analyst assessment saved and visible in review history",
+      "passed": true,
+      "case_id": 1
+    },
+    {
+      "name": "HTML-like review input renders literally without an img element",
+      "passed": true,
+      "observed_img_elements": 0
+    },
+    {
+      "name": "Audit log navigated using administrator role",
+      "passed": true
+    },
+    {
+      "name": "Logout empties sensitive case, review, audit, user-list DOM and password fields",
+      "passed": true,
+      "case_marker_present": false,
+      "review_text": "",
+      "audit_text": "",
+      "users_text": "",
+      "password_fields_nonempty": false
+    },
+    {
+      "name": "Viewer has no visible assessment or user-management button",
+      "passed": true
+    },
+    {
+      "name": "Mobile viewport has no document overflow; sign-out available",
+      "passed": true,
+      "viewport_width": 390,
+      "viewport_height": 844,
+      "document_width": 390
+    },
+    {
+      "name": "Temporary viewport reset to browser default",
+      "passed": true
+    },
+    {
+      "name": "Renamed FraudGraph title, sign-in and persisted case queue verified",
+      "passed": true
+    },
+    {
+      "name": "Distributed-hub synthetic replay through dashboard reported actual evasion",
+      "passed": true,
+      "accepted_transactions": 24,
+      "cases_updated": 0
+    }
+  ],
+  "limitations": [
+    "One browser engine; manual tool-driven checks rather than a shipped headless suite",
+    "No screen-reader, full WCAG, 200 percent text enlargement or browser polling latency distribution measured",
+    "In-flight logout response protection source reviewed, not stress-tested in browser"
+  ],
+  "project": "FraudGraph"
+}

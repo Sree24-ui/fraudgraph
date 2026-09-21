@@ -1,0 +1,156 @@
+{
+  "scope": "Independent local real-HTTP security probe against a booted Uvicorn process",
+  "data": "Entirely SYNTHETIC generated fixture; no real UPI data",
+  "generated_at_ms": 1789972975838,
+  "checks_passed": 24,
+  "checks": [
+    {
+      "name": "anonymous alerts denied",
+      "status": 401,
+      "expected": 401,
+      "passed": true
+    },
+    {
+      "name": "anonymous users denied",
+      "status": 401,
+      "expected": 401,
+      "passed": true
+    },
+    {
+      "name": "untrusted host denied",
+      "status": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "name": "cross-origin login denied",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "oversize body denied",
+      "status": 413,
+      "expected": 413,
+      "passed": true
+    },
+    {
+      "name": "admin login",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "viewer login",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "ingestor login",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "viewer cannot administer users",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "ingestor cannot read alerts",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "missing CSRF denied",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "non-ASCII CSRF denied",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "synthetic real-HTTP ingestion",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "exact retry idempotent",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "conflicting retry denied",
+      "status": 409,
+      "expected": 409,
+      "passed": true
+    },
+    {
+      "name": "authorized analyst data available",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "viewer review denied",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "admin review persisted",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "stale review conflict",
+      "status": 409,
+      "expected": 409,
+      "passed": true
+    },
+    {
+      "name": "session and case survive server restart",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "admin disables viewer",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "disabled viewer session denied",
+      "status": 401,
+      "expected": 401,
+      "passed": true
+    },
+    {
+      "name": "logout succeeds",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "logged-out bearer reuse denied",
+      "status": 401,
+      "expected": 401,
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Loopback HTTP development configuration; production TLS, reverse proxy, MFA, browser DOM behavior and large-scale abuse are not tested by this probe.",
+    "Assertions abort on first failure; a written report represents all listed checks completing."
+  ]
+}

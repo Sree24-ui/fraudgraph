@@ -1,0 +1,356 @@
+{
+  "checked_at_utc": "2026-09-20T15:06:52.722657+00:00",
+  "source": "Official PyPI per-release JSON vulnerability feed",
+  "requirements": "requirements-dev.lock",
+  "limitations": "Feed coverage only. Does not establish freedom from vulnerabilities; no independent penetration test.",
+  "pip_audit_attempts": "Initial command used --disable-pip without -r (CLI error); corrected command timed out in Python HTTPS client. This verified-TLS curl fallback was run instead.",
+  "packages": 49,
+  "checked": 49,
+  "failed": 0,
+  "advisories": 0,
+  "results": [
+    {
+      "name": "CacheControl",
+      "version": "0.14.4",
+      "url": "https://pypi.org/pypi/CacheControl/0.14.4/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "url": "https://pypi.org/pypi/Pygments/2.21.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "url": "https://pypi.org/pypi/annotated-doc/0.0.5/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "url": "https://pypi.org/pypi/annotated-types/0.8.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "url": "https://pypi.org/pypi/anyio/4.15.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "argon2-cffi-bindings",
+      "version": "26.1.0",
+      "url": "https://pypi.org/pypi/argon2-cffi-bindings/26.1.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "argon2-cffi",
+      "version": "25.1.0",
+      "url": "https://pypi.org/pypi/argon2-cffi/25.1.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "boolean.py",
+      "version": "5.0",
+      "url": "https://pypi.org/pypi/boolean.py/5.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "url": "https://pypi.org/pypi/certifi/2026.7.22/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "url": "https://pypi.org/pypi/cffi/2.1.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.1",
+      "url": "https://pypi.org/pypi/charset-normalizer/3.5.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "url": "https://pypi.org/pypi/click/8.5.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "cyclonedx-python-lib",
+      "version": "11.12.0",
+      "url": "https://pypi.org/pypi/cyclonedx-python-lib/11.12.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "defusedxml",
+      "version": "0.7.1",
+      "url": "https://pypi.org/pypi/defusedxml/0.7.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "fastapi",
+      "version": "0.141.1",
+      "url": "https://pypi.org/pypi/fastapi/0.141.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "filelock",
+      "version": "4.0.1",
+      "url": "https://pypi.org/pypi/filelock/4.0.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "url": "https://pypi.org/pypi/h11/0.16.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "url": "https://pypi.org/pypi/httpcore/1.0.9/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "url": "https://pypi.org/pypi/httpx/0.28.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "url": "https://pypi.org/pypi/idna/3.20/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "url": "https://pypi.org/pypi/iniconfig/2.3.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "license-expression",
+      "version": "30.4.4",
+      "url": "https://pypi.org/pypi/license-expression/30.4.4/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "url": "https://pypi.org/pypi/markdown-it-py/4.2.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2",
+      "url": "https://pypi.org/pypi/mdurl/0.1.2/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "msgpack",
+      "version": "1.2.2",
+      "url": "https://pypi.org/pypi/msgpack/1.2.2/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "packageurl-python",
+      "version": "0.17.6",
+      "url": "https://pypi.org/pypi/packageurl-python/0.17.6/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "url": "https://pypi.org/pypi/packaging/26.3/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pip-requirements-parser",
+      "version": "32.0.1",
+      "url": "https://pypi.org/pypi/pip-requirements-parser/32.0.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pip",
+      "version": "26.2.1",
+      "url": "https://pypi.org/pypi/pip/26.2.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pip_api",
+      "version": "0.0.35",
+      "url": "https://pypi.org/pypi/pip_api/0.0.35/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pip_audit",
+      "version": "2.10.1",
+      "url": "https://pypi.org/pypi/pip_audit/2.10.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.11.11",
+      "url": "https://pypi.org/pypi/platformdirs/4.11.11/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "url": "https://pypi.org/pypi/pluggy/1.6.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "py-serializable",
+      "version": "2.1.0",
+      "url": "https://pypi.org/pypi/py-serializable/2.1.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pycparser",
+      "version": "3.0",
+      "url": "https://pypi.org/pypi/pycparser/3.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.5",
+      "url": "https://pypi.org/pypi/pydantic/2.13.5/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.46.5",
+      "url": "https://pypi.org/pypi/pydantic_core/2.46.5/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.2",
+      "url": "https://pypi.org/pypi/pyparsing/3.3.2/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "url": "https://pypi.org/pypi/pytest/9.1.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "url": "https://pypi.org/pypi/requests/2.34.2/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0",
+      "url": "https://pypi.org/pypi/rich/15.0.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "sortedcontainers",
+      "version": "2.4.0",
+      "url": "https://pypi.org/pypi/sortedcontainers/2.4.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "starlette",
+      "version": "1.6.0",
+      "url": "https://pypi.org/pypi/starlette/1.6.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "tomli",
+      "version": "2.4.1",
+      "url": "https://pypi.org/pypi/tomli/2.4.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "tomli_w",
+      "version": "1.2.0",
+      "url": "https://pypi.org/pypi/tomli_w/1.2.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "url": "https://pypi.org/pypi/typing-inspection/0.4.4/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "url": "https://pypi.org/pypi/typing_extensions/4.16.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "url": "https://pypi.org/pypi/urllib3/2.8.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.53.0",
+      "url": "https://pypi.org/pypi/uvicorn/0.53.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "checked_at_utc": "2026-09-20T15:00:56.029396+00:00",
+  "source": "Official PyPI per-release JSON vulnerability feed",
+  "requirements": "requirements-dev.lock",
+  "limitations": "Feed coverage only. Does not establish freedom from vulnerabilities; no independent penetration test.",
+  "pip_audit_attempts": "Initial command used --disable-pip without -r (CLI error); corrected command timed out in Python HTTPS client. This verified-TLS curl fallback was run instead.",
+  "packages": 49,
+  "checked": 49,
+  "failed": 0,
+  "advisories": 10,
+  "results": [
+    {
+      "name": "CacheControl",
+      "version": "0.14.4",
+      "url": "https://pypi.org/pypi/CacheControl/0.14.4/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "url": "https://pypi.org/pypi/Pygments/2.21.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "url": "https://pypi.org/pypi/annotated-doc/0.0.5/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "url": "https://pypi.org/pypi/annotated-types/0.8.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "url": "https://pypi.org/pypi/anyio/4.15.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "argon2-cffi-bindings",
+      "version": "26.1.0",
+      "url": "https://pypi.org/pypi/argon2-cffi-bindings/26.1.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "argon2-cffi",
+      "version": "25.1.0",
+      "url": "https://pypi.org/pypi/argon2-cffi/25.1.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "boolean.py",
+      "version": "5.0",
+      "url": "https://pypi.org/pypi/boolean.py/5.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "url": "https://pypi.org/pypi/certifi/2026.7.22/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "url": "https://pypi.org/pypi/cffi/2.1.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.1",
+      "url": "https://pypi.org/pypi/charset-normalizer/3.5.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "url": "https://pypi.org/pypi/click/8.5.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "cyclonedx-python-lib",
+      "version": "11.12.0",
+      "url": "https://pypi.org/pypi/cyclonedx-python-lib/11.12.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "defusedxml",
+      "version": "0.7.1",
+      "url": "https://pypi.org/pypi/defusedxml/0.7.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "fastapi",
+      "version": "0.141.1",
+      "url": "https://pypi.org/pypi/fastapi/0.141.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "filelock",
+      "version": "4.0.1",
+      "url": "https://pypi.org/pypi/filelock/4.0.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "url": "https://pypi.org/pypi/h11/0.16.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "url": "https://pypi.org/pypi/httpcore/1.0.9/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "url": "https://pypi.org/pypi/httpx/0.28.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "url": "https://pypi.org/pypi/idna/3.20/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "url": "https://pypi.org/pypi/iniconfig/2.3.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "license-expression",
+      "version": "30.4.4",
+      "url": "https://pypi.org/pypi/license-expression/30.4.4/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "url": "https://pypi.org/pypi/markdown-it-py/4.2.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2",
+      "url": "https://pypi.org/pypi/mdurl/0.1.2/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "msgpack",
+      "version": "1.2.2",
+      "url": "https://pypi.org/pypi/msgpack/1.2.2/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "packageurl-python",
+      "version": "0.17.6",
+      "url": "https://pypi.org/pypi/packageurl-python/0.17.6/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "url": "https://pypi.org/pypi/packaging/26.3/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pip-requirements-parser",
+      "version": "32.0.1",
+      "url": "https://pypi.org/pypi/pip-requirements-parser/32.0.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pip",
+      "version": "25.3",
+      "url": "https://pypi.org/pypi/pip/25.3/json",
+      "status": "checked",
+      "vulnerabilities": [
+        {
+          "aliases": [
+            "CVE-2026-1703",
+            "PYSEC-2026-1796"
+          ],
+          "details": "When pip is installing and extracting a maliciously crafted wheel archive, files may be extracted outside the installation directory. The path traversal is limited to prefixes of the installation directory, thus isn't able to inject or overwrite executable files in typical situations.",
+          "fixed_in": [
+            "26.0"
+          ],
+          "id": "GHSA-6vgw-5pg2-w6jp",
+          "link": "https://osv.dev/vulnerability/GHSA-6vgw-5pg2-w6jp",
+          "source": "osv",
+          "summary": null,
+          "withdrawn": null
+        },
+        {
+          "aliases": [
+            "CVE-2026-3219",
+            "PYSEC-2026-2875"
+          ],
+          "details": "pip handles concatenated tar and ZIP files as ZIP files regardless of filename or whether a file is both a tar and ZIP file. This behavior could result in confusing installation behavior, such as installing \"incorrect\" files according to the filename of the archive. New behavior only proceeds with installation if the file identifies uniquely as a ZIP or tar archive, not as both.",
+          "fixed_in": [
+            "26.1"
+          ],
+          "id": "GHSA-58qw-9mgm-455v",
+          "link": "https://osv.dev/vulnerability/GHSA-58qw-9mgm-455v",
+          "source": "osv",
+          "summary": null,
+          "withdrawn": null
+        },
+        {
+          "aliases": [
+            "CVE-2026-6357",
+            "PYSEC-2026-2876"
+          ],
+          "details": "pip prior to version 26.1 would run self-update check functionality after installing wheel files which required importing well-known Python modules names. These module imports were intentionally deferred to increase startup time of the pip CLI. The patch changes self-update functionality to run before wheels are installed to prevent newly-installed modules from being imported shortly after the installation of a wheel package. Users should still review package contents prior to installation.",
+          "fixed_in": [
+            "26.1"
+          ],
+          "id": "GHSA-jp4c-xjxw-mgf9",
+          "link": "https://osv.dev/vulnerability/GHSA-jp4c-xjxw-mgf9",
+          "source": "osv",
+          "summary": null,
+          "withdrawn": null
+        },
+        {
+          "aliases": [
+            "CVE-2026-8643",
+            "GHSA-wf93-45jw-7689"
+          ],
+          "details": "pip would treat console_scripts and gui_scripts as paths instead of file names without sanitizing the resolved absolute path to the installation directory, leading to entry points being installed outside the installation directory.",
+          "fixed_in": [
+            "26.1.2"
+          ],
+          "id": "PYSEC-2026-196",
+          "link": "https://osv.dev/vulnerability/PYSEC-2026-196",
+          "source": "osv",
+          "summary": null,
+          "withdrawn": null
+        },
+        {
+          "aliases": [
+            "CVE-2026-1703",
+            "GHSA-6vgw-5pg2-w6jp"
+          ],
+          "details": "When pip is installing and extracting a maliciously crafted wheel archive, files may be extracted outside the installation directory. The path traversal is limited to prefixes of the installation directory, thus isn't able to inject or overwrite executable files in typical situations.",
+          "fixed_in": [
+            "26.0"
+          ],
+          "id": "PYSEC-2026-1796",
+          "link": "https://osv.dev/vulnerability/PYSEC-2026-1796",
+          "source": "osv",
+          "summary": null,
+          "withdrawn": null
+        },
+        {
+          "aliases": [
+            "CVE-2026-8643",
+            "PYSEC-2026-196"
+          ],
+          "details": "pip would treat console_scripts and gui_scripts as paths instead of file names without sanitizing the resolved absolute path to the installation directory, leading to entry points being installed outside the installation directory.",
+          "fixed_in": [
+            "26.1.2"
+          ],
+          "id": "GHSA-wf93-45jw-7689",
+          "link": "https://osv.dev/vulnerability/GHSA-wf93-45jw-7689",
+          "source": "osv",
+          "summary": null,
+          "withdrawn": null
+        },
+        {
+          "aliases": [
+            "CVE-2026-3219",
+            "GHSA-58qw-9mgm-455v"
+          ],
+          "details": "pip handles concatenated tar and ZIP files as ZIP files regardless of filename or whether a file is both a tar and ZIP file. This behavior could result in confusing installation behavior, such as installing \"incorrect\" files according to the filename of the archive. New behavior only proceeds with installation if the file identifies uniquely as a ZIP or tar archive, not as both.",
+          "fixed_in": [
+            "26.1"
+          ],
+          "id": "PYSEC-2026-2875",
+          "link": "https://osv.dev/vulnerability/PYSEC-2026-2875",
+          "source": "osv",
+          "summary": null,
+          "withdrawn": null
+        },
+        {
+          "aliases": [
+            "CVE-2026-6357",
+            "GHSA-jp4c-xjxw-mgf9"
+          ],
+          "details": "pip prior to version 26.1 would run self-update check functionality after installing wheel files which required importing well-known Python modules names. These module imports were intentionally deferred to increase startup time of the pip CLI. The patch changes self-update functionality to run before wheels are installed to prevent newly-installed modules from being imported shortly after the installation of a wheel package. Users should still review package contents prior to installation.",
+          "fixed_in": [
+            "26.1"
+          ],
+          "id": "PYSEC-2026-2876",
+          "link": "https://osv.dev/vulnerability/PYSEC-2026-2876",
+          "source": "osv",
+          "summary": null,
+          "withdrawn": null
+        },
+        {
+          "aliases": [
+            "CVE-2026-13346",
+            "GHSA-qwm4-qh6w-59xr"
+          ],
+          "details": "pip would incorrectly handle doubly-encoded package URLs from indexes allowing for files to be installed to arbitrary locations on disk even when installing wheels.\n\n\n\n\nThis vulnerability requires downloading or installing a package from a malicious package index to succeed, malicious packages alone are not able to exploit this vulnerability. Note that this vulnerability only materially impacts users running `pip download` with the `--only-binary` option as installing source distributions from an untrusted index is already an unsafe operation that executes code during install time.",
+          "fixed_in": [
+            "26.2"
+          ],
+          "id": "PYSEC-2026-3721",
+          "link": "https://osv.dev/vulnerability/PYSEC-2026-3721",
+          "source": "osv",
+          "summary": null,
+          "withdrawn": null
+        },
+        {
+          "aliases": [
+            "CVE-2026-13346",
+            "PYSEC-2026-3721"
+          ],
+          "details": "pip would incorrectly handle doubly-encoded package URLs from indexes allowing for files to be installed to arbitrary locations on disk even when installing wheels.\n\nThis vulnerability requires downloading or installing a package from a malicious package index to succeed, malicious packages alone are not able to exploit this vulnerability. Note that this vulnerability only materially impacts users running `pip download` with the `--only-binary` option as installing source distributions from an untrusted index is already an unsafe operation that executes code during install time.",
+          "fixed_in": [
+            "26.2.0"
+          ],
+          "id": "GHSA-qwm4-qh6w-59xr",
+          "link": "https://osv.dev/vulnerability/GHSA-qwm4-qh6w-59xr",
+          "source": "osv",
+          "summary": null,
+          "withdrawn": null
+        }
+      ]
+    },
+    {
+      "name": "pip_api",
+      "version": "0.0.35",
+      "url": "https://pypi.org/pypi/pip_api/0.0.35/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pip_audit",
+      "version": "2.10.1",
+      "url": "https://pypi.org/pypi/pip_audit/2.10.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.11.11",
+      "url": "https://pypi.org/pypi/platformdirs/4.11.11/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "url": "https://pypi.org/pypi/pluggy/1.6.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "py-serializable",
+      "version": "2.1.0",
+      "url": "https://pypi.org/pypi/py-serializable/2.1.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pycparser",
+      "version": "3.0",
+      "url": "https://pypi.org/pypi/pycparser/3.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.5",
+      "url": "https://pypi.org/pypi/pydantic/2.13.5/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.46.5",
+      "url": "https://pypi.org/pypi/pydantic_core/2.46.5/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.2",
+      "url": "https://pypi.org/pypi/pyparsing/3.3.2/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "url": "https://pypi.org/pypi/pytest/9.1.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "url": "https://pypi.org/pypi/requests/2.34.2/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0",
+      "url": "https://pypi.org/pypi/rich/15.0.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "sortedcontainers",
+      "version": "2.4.0",
+      "url": "https://pypi.org/pypi/sortedcontainers/2.4.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "starlette",
+      "version": "1.6.0",
+      "url": "https://pypi.org/pypi/starlette/1.6.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "tomli",
+      "version": "2.4.1",
+      "url": "https://pypi.org/pypi/tomli/2.4.1/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "tomli_w",
+      "version": "1.2.0",
+      "url": "https://pypi.org/pypi/tomli_w/1.2.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "url": "https://pypi.org/pypi/typing-inspection/0.4.4/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "url": "https://pypi.org/pypi/typing_extensions/4.16.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "url": "https://pypi.org/pypi/urllib3/2.8.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.53.0",
+      "url": "https://pypi.org/pypi/uvicorn/0.53.0/json",
+      "status": "checked",
+      "vulnerabilities": []
+    }
+  ]
+}

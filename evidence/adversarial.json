@@ -1,0 +1,274 @@
+{
+  "report_version": 1,
+  "provenance": "synthetic",
+  "warning": "Deliberately constructed SYNTHETIC scenarios. Outcomes are not real-world accuracy estimates. A passing evasion test can intentionally mean an attack was MISSED.",
+  "evaluation_time_ms": 1750000290000,
+  "seed": 7,
+  "detector_config": {
+    "version": "fanin-fanout-v1.0.0",
+    "windows_seconds": [
+      300,
+      1800,
+      7200
+    ],
+    "min_sources": 4,
+    "min_recipients": 4,
+    "min_passthrough": 0.65,
+    "max_passthrough": 1.35,
+    "min_new_recipient_fraction": 0.8,
+    "score_kind": "heuristic_not_probability"
+  },
+  "detector_sha256": "4ba040d82e18eb8764a670049715d4d1829d51e2bc0573acce2c9ff3cb720afe",
+  "aggregate_accuracy": null,
+  "aggregate_accuracy_reason": "The scenario mix was selected to probe predicates, not sampled from any deployment population.",
+  "results": [
+    {
+      "scenario": "fan_in_fan_out",
+      "provenance": "synthetic",
+      "description": "SYNTHETIC: six sources fund one mule, which pays six fresh recipients.",
+      "transactions": 12,
+      "accounts": 13,
+      "intended_hub_labels": {
+        "synthetic:mule": true
+      },
+      "snapshot_flagged_accounts_and_windows": {
+        "synthetic:mule": [
+          300,
+          1800,
+          7200
+        ]
+      },
+      "chronological_replay_ever_flagged": {
+        "synthetic:mule": {
+          "first_detection_at": 1750000200000,
+          "windows_seconds": [
+            300,
+            1800,
+            7200
+          ]
+        }
+      },
+      "missed_intended_mules": [],
+      "false_positive_benign_hubs": [],
+      "expected_rule_alert": true,
+      "expectation_matches_observed": true,
+      "interpretation": "Canonical fixture satisfies every frozen predicate."
+    },
+    {
+      "scenario": "ordinary_merchant",
+      "provenance": "synthetic",
+      "description": "SYNTHETIC benign: six customer payments and one supplier payout.",
+      "transactions": 7,
+      "accounts": 8,
+      "intended_hub_labels": {
+        "synthetic:ordinary_merchant": false
+      },
+      "snapshot_flagged_accounts_and_windows": {},
+      "chronological_replay_ever_flagged": {},
+      "missed_intended_mules": [],
+      "false_positive_benign_hubs": [],
+      "expected_rule_alert": false,
+      "expectation_matches_observed": true,
+      "interpretation": "One supplier payout does not satisfy four distinct recipients."
+    },
+    {
+      "scenario": "legitimate_aggregator",
+      "provenance": "synthetic",
+      "description": "SYNTHETIC benign: genuine payment aggregator with the same observable shape as a mule.",
+      "transactions": 12,
+      "accounts": 13,
+      "intended_hub_labels": {
+        "synthetic:legitimate_aggregator": false
+      },
+      "snapshot_flagged_accounts_and_windows": {
+        "synthetic:legitimate_aggregator": [
+          300,
+          1800,
+          7200
+        ]
+      },
+      "chronological_replay_ever_flagged": {
+        "synthetic:legitimate_aggregator": {
+          "first_detection_at": 1750000200000,
+          "windows_seconds": [
+            300,
+            1800,
+            7200
+          ]
+        }
+      },
+      "missed_intended_mules": [],
+      "false_positive_benign_hubs": [
+        "synthetic:legitimate_aggregator"
+      ],
+      "expected_rule_alert": true,
+      "expectation_matches_observed": true,
+      "interpretation": "Known false positive: legitimate aggregation has an indistinguishable payment shape without customer/business context."
+    },
+    {
+      "scenario": "window_boundary",
+      "provenance": "synthetic",
+      "description": "SYNTHETIC attack: fan-in/fan-out straddles a fixed five-minute bucket boundary.",
+      "transactions": 12,
+      "accounts": 13,
+      "intended_hub_labels": {
+        "synthetic:mule": true
+      },
+      "snapshot_flagged_accounts_and_windows": {
+        "synthetic:mule": [
+          300,
+          1800,
+          7200
+        ]
+      },
+      "chronological_replay_ever_flagged": {
+        "synthetic:mule": {
+          "first_detection_at": 1750000230000,
+          "windows_seconds": [
+            300,
+            1800,
+            7200
+          ]
+        }
+      },
+      "missed_intended_mules": [],
+      "false_positive_benign_hubs": [],
+      "expected_rule_alert": true,
+      "expectation_matches_observed": true,
+      "interpretation": "Overlapping trailing event-time windows preserve the motif across epoch-aligned bucket boundaries."
+    },
+    {
+      "scenario": "slow_laundering",
+      "provenance": "synthetic",
+      "description": "SYNTHETIC attack: more than two hours separate fan-in and redistribution.",
+      "transactions": 12,
+      "accounts": 13,
+      "intended_hub_labels": {
+        "synthetic:mule": true
+      },
+      "snapshot_flagged_accounts_and_windows": {},
+      "chronological_replay_ever_flagged": {},
+      "missed_intended_mules": [
+        "synthetic:mule"
+      ],
+      "false_positive_benign_hubs": [],
+      "expected_rule_alert": false,
+      "expectation_matches_observed": true,
+      "interpretation": "Known evasion: the earliest incoming funds are outside every window when redistribution arrives."
+    },
+    {
+      "scenario": "distributed_hubs",
+      "provenance": "synthetic",
+      "description": "SYNTHETIC attack: four coordinating mules each have only three sources and recipients.",
+      "transactions": 24,
+      "accounts": 19,
+      "intended_hub_labels": {
+        "synthetic:mule-0": true,
+        "synthetic:mule-1": true,
+        "synthetic:mule-2": true,
+        "synthetic:mule-3": true
+      },
+      "snapshot_flagged_accounts_and_windows": {},
+      "chronological_replay_ever_flagged": {},
+      "missed_intended_mules": [
+        "synthetic:mule-0",
+        "synthetic:mule-1",
+        "synthetic:mule-2",
+        "synthetic:mule-3"
+      ],
+      "false_positive_benign_hubs": [],
+      "expected_rule_alert": false,
+      "expectation_matches_observed": true,
+      "interpretation": "Known evasion: four coordinating hubs share settlement accounts, but each hub has only three sources and recipients; no group-level rule exists."
+    },
+    {
+      "scenario": "recipient_reuse",
+      "provenance": "synthetic",
+      "description": "SYNTHETIC attack: laundering via accounts that also appear in the source set.",
+      "transactions": 12,
+      "accounts": 7,
+      "intended_hub_labels": {
+        "synthetic:mule": true
+      },
+      "snapshot_flagged_accounts_and_windows": {},
+      "chronological_replay_ever_flagged": {},
+      "missed_intended_mules": [
+        "synthetic:mule"
+      ],
+      "false_positive_benign_hubs": [],
+      "expected_rule_alert": false,
+      "expectation_matches_observed": true,
+      "interpretation": "Known evasion: recipients also occur in the source set, defeating the fresh-recipient predicate."
+    },
+    {
+      "scenario": "interleaved_draining",
+      "provenance": "synthetic",
+      "description": "SYNTHETIC attack: each inflow is immediately drained before four sources accumulate.",
+      "transactions": 12,
+      "accounts": 13,
+      "intended_hub_labels": {
+        "synthetic:mule": true
+      },
+      "snapshot_flagged_accounts_and_windows": {},
+      "chronological_replay_ever_flagged": {},
+      "missed_intended_mules": [
+        "synthetic:mule"
+      ],
+      "false_positive_benign_hubs": [],
+      "expected_rule_alert": false,
+      "expectation_matches_observed": true,
+      "interpretation": "Known evasion: only three payouts remain after the fourth unique source establishes the phase gate."
+    },
+    {
+      "scenario": "low_passthrough",
+      "provenance": "synthetic",
+      "description": "SYNTHETIC attack: a mule redistributes only 60% of the observed inflow.",
+      "transactions": 12,
+      "accounts": 13,
+      "intended_hub_labels": {
+        "synthetic:mule": true
+      },
+      "snapshot_flagged_accounts_and_windows": {},
+      "chronological_replay_ever_flagged": {},
+      "missed_intended_mules": [
+        "synthetic:mule"
+      ],
+      "false_positive_benign_hubs": [],
+      "expected_rule_alert": false,
+      "expectation_matches_observed": true,
+      "interpretation": "Known evasion: outgoing value is 60% of incoming value, below the frozen 65% minimum."
+    },
+    {
+      "scenario": "reverse_order",
+      "provenance": "synthetic",
+      "description": "SYNTHETIC non-matching order: all payouts precede the apparent fan-in.",
+      "transactions": 12,
+      "accounts": 13,
+      "intended_hub_labels": {
+        "synthetic:mule": false
+      },
+      "snapshot_flagged_accounts_and_windows": {},
+      "chronological_replay_ever_flagged": {},
+      "missed_intended_mules": [],
+      "false_positive_benign_hubs": [],
+      "expected_rule_alert": false,
+      "expectation_matches_observed": true,
+      "interpretation": "Negative control: paying out before receiving from the sources does not establish the required temporal relationship."
+    }
+  ],
+  "service_probes": {
+    "provenance": "synthetic",
+    "late_arrival": {
+      "initial_seven_events_no_alert": true,
+      "late_fourth_source_creates_historical_alert": true,
+      "retry_is_idempotent": true,
+      "one_case_persisted": true,
+      "evidence_exactly_matches_eight_events": true,
+      "sums_match_ledger": true
+    },
+    "same_timestamp_events_do_not_fabricate_order": true,
+    "data_source_isolation": true,
+    "isolation_probe_caveat": "Disposable synthetic fixtures included a test 'real' routing label solely to test isolation; no real transaction data was used.",
+    "all_passed": true
+  }
+}

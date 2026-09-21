@@ -1,0 +1,15 @@
+{
+  "wheel": "fraudgraph-0.1.0-py3-none-any.whl",
+  "sha256": "58b110d07fa94f6143c708d03c18f4671cf567533746f58a2cb1d0f48fc32018",
+  "installed_to_isolated_directory": true,
+  "checks": {
+    "package_import_from_install": true,
+    "database_initialization": true,
+    "health": 200,
+    "dashboard_with_FraudGraph_brand": 200,
+    "bundled_js": 200,
+    "bundled_css": 200,
+    "anonymous_alerts_denied": 401
+  },
+  "scope": "Installed-wheel TestClient smoke, separate from real HTTP probe"
+}

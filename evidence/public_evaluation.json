@@ -1,0 +1,97 @@
+{
+  "dataset": "IBM AMLSim v2.1 bank_mixed",
+  "data_kind": "independently_published_external_synthetic_not_UPI_not_real_banking_data",
+  "source_page": "https://github.com/IBM/AMLSim/wiki/Download-Example-Data-Set",
+  "download_url": "https://www.dropbox.com/sh/l3grpumqfgbxqak/AAAj0fIjtJI6n9fdIBy2V7Lia/banks/v2.1?dl=0",
+  "evaluated_at_utc": "2026-09-20T06:21:07.852155+00:00",
+  "sha256_files": {
+    "accounts.csv.gz": "c07436098bc13d345d52b9c063dbe08e674adf71b955c95c8907a1e3e54a602f",
+    "transactions.csv.gz": "d32cd92994941ae61128a29e1d59ca828ae389d9a90aef962f281d450e676d08",
+    "alert_accounts.csv.gz": "a17be41c7db8cfe78a9a28a1d38a48bfa91058bd4a7af72ee0661d473b16cbbb",
+    "alert_transactions.csv.gz": "d32d38c93ec32c2fa38f3d55fbb4e8907811e61e3a1a8a438540fd37ef964336"
+  },
+  "detector_sha256": "4ba040d82e18eb8764a670049715d4d1829d51e2bc0573acce2c9ff3cb720afe",
+  "detector": {
+    "version": "fanin-fanout-v1.0.0",
+    "windows_seconds": [
+      300,
+      1800,
+      7200
+    ],
+    "min_sources": 4,
+    "min_recipients": 4,
+    "min_passthrough": 0.65,
+    "max_passthrough": 1.35,
+    "min_new_recipient_fraction": 0.8,
+    "score_kind": "heuristic_not_probability"
+  },
+  "protocol": {
+    "tuning": "none; frozen production thresholds",
+    "labels_used_for_detection": false,
+    "time_rescaling": false,
+    "same_timestamp_policy": "all events added before one evaluation per affected account; strict causal gate preserved",
+    "monetary_units": "synthetic USD cents mapped losslessly to integer detector amount field; no INR conversion",
+    "preprocessing": "verified SHA-256; all source transactions replayed in original chronological timestamp groups; source ID retained with namespace prefix",
+    "evaluation_scope": "core production detector replay, not HTTP ingestion throughput or live UPI validation"
+  },
+  "counts": {
+    "timestamp_groups": 720,
+    "non_midnight_timestamp_groups": 0,
+    "transactions": 885744,
+    "sar_transactions": 807,
+    "account_timestamp_evaluations": 1675092,
+    "candidate_window_matches": 0,
+    "accounts": 20000,
+    "observed_accounts": 20000,
+    "sar_accounts": 753,
+    "unique_alerted_accounts": 0
+  },
+  "account_sar_confusion": {
+    "unit": "unique_account_over_entire_replay",
+    "true_positive": 0,
+    "false_positive": 0,
+    "false_negative": 753,
+    "true_negative": 19247,
+    "precision": null,
+    "precision_note": "Undefined when no accounts are alerted; null is not perfect precision",
+    "recall": 0.0,
+    "false_positive_rate": 0.0,
+    "f1": 0.0,
+    "formula": {
+      "precision": "TP / (TP + FP)",
+      "recall": "TP / (TP + FN)",
+      "false_positive_rate": "FP / (FP + TN)",
+      "f1": "2TP / (2TP + FP + FN)"
+    }
+  },
+  "gather_scatter_hubs": {
+    "ground_truth_hubs": 50,
+    "detected_hubs": 0,
+    "recall": 0.0
+  },
+  "coverage": {
+    "source_patterns_by_type": {
+      "scatter_gather": 30,
+      "gather_scatter": 50,
+      "cycle": 20
+    },
+    "gather_scatter_duration_seconds_min": 777600.0,
+    "gather_scatter_duration_seconds_max": 2505600.0,
+    "gather_scatter_patterns_entirely_within_largest_frozen_window": 0,
+    "gather_scatter_hubs_meeting_four_by_four_over_entire_pattern": 31,
+    "first_timestamp_ms": 1483228800000,
+    "last_timestamp_ms": 1545350400000
+  },
+  "elapsed_seconds_core_replay_and_csv_parsing": 9.791171582881361,
+  "source_rows_per_second_core_replay_and_csv_parsing": 90463.53569664866,
+  "predicted_accounts": [],
+  "candidate_examples_first_20": [],
+  "interpretation": "External validation failure for this operational window, not evidence of high accuracy. Day-resolution source data cannot establish strictly later inflow-to-outflow causality inside a 2-hour window; source SAR labels also include cycle participants and non-hub members beyond this rule's target.",
+  "limitations": [
+    "External synthetic, US/USD banking simulation, not UPI data or proof of real-world effectiveness",
+    "All original timestamps are preserved; source daily granularity differs from near-real-time UPI",
+    "SAR account truth covers all typology participants, while rule targets hubs",
+    "Runtime covers in-process detector replay and CSV parsing on this machine, not service latency or sustainable throughput",
+    "No threshold optimization, feature leakage, money conversion or timestamp compression"
+  ]
+}
